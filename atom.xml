@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://intaonote.github.io/</id>
     <title>MotionNote</title>
-    <updated>2020-03-16T06:22:43.707Z</updated>
+    <updated>2020-03-16T14:04:28.465Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://intaonote.github.io/"/>
     <link rel="self" href="https://intaonote.github.io/atom.xml"/>
@@ -11,34 +11,103 @@
     <icon>https://intaonote.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, MotionNote</rights>
     <entry>
-        <title type="html"><![CDATA[这是个测试]]></title>
-        <id>https://intaonote.github.io/post/zhe-shi-ge-ce-shi/</id>
-        <link href="https://intaonote.github.io/post/zhe-shi-ge-ce-shi/">
+        <title type="html"><![CDATA[每日渲染010]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-010/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-010/">
         </link>
-        <updated>2020-03-15T14:27:46.000Z</updated>
-        <content type="html"><![CDATA[<p>这是个测试下面放个图片看😙</p>
+        <updated>2020-03-16T13:43:13.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584366225479.png" alt="" loading="lazy"></figure>
+<p>五彩斑斓的黑</p>
+<figure data-type="image" tabindex="2"><img src="https://intaonote.github.io//post-images/1584366369917.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[个人简介]]></title>
-        <id>https://intaonote.github.io/post/ge-ren-jian-jie/</id>
-        <link href="https://intaonote.github.io/post/ge-ren-jian-jie/">
+        <title type="html"><![CDATA[每日渲染009]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-009/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-009/">
         </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>这里是我的作品存放区域~</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>一名工科男</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>弄动画渲染🍏</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>yinlisht@<br>
-欢迎给我发邮件丫<br>
-<strong>这是我的<a href="https://space.bilibili.com/290805441">b站</a></strong><br>
-地址</p>
+        <updated>2020-03-16T13:35:23.000Z</updated>
+        <content type="html"><![CDATA[<p>这张图总是被和谐😂</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584366130449.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染008]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-007/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-007/">
+        </link>
+        <updated>2020-03-16T13:32:55.000Z</updated>
+        <content type="html"><![CDATA[<p>这张图是想延续之前的想法，如果地球只剩下了一棵树会怎么样？<br>
+人类会灭绝吗？地球会毁灭吗？</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584365603219.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染006]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-006/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-006/">
+        </link>
+        <updated>2020-03-16T13:23:08.000Z</updated>
+        <content type="html"><![CDATA[<p>那时候看到澳洲大火烧了那么久，隐隐觉得生态平衡会被打破<br>
+现在写这篇文章的我正值疫情时期<br>
+总感觉全世界的新冠和澳洲大火有着微妙的关系</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584365013644.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染005]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-005/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-005/">
+        </link>
+        <updated>2020-03-16T13:19:52.000Z</updated>
+        <content type="html"><![CDATA[<p>扭曲的树木，奇怪的人体，反正当时想的是给人一种“神秘之地”的感觉</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584364853518.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://intaonote.github.io//post-images/1584364893366.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://intaonote.github.io//post-images/1584364902162.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染004]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-004/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-004/">
+        </link>
+        <updated>2020-03-16T13:18:04.000Z</updated>
+        <content type="html"><![CDATA[<p>这张没做好😅</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584364737248.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染003]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-003/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-003/">
+        </link>
+        <updated>2020-03-16T13:14:36.000Z</updated>
+        <content type="html"><![CDATA[<p>一名宇航员到达了一个陌生的星球，看到遍地的骷髅在沉思这里曾经发生过什么</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584364616174.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染002]]></title>
+        <id>https://intaonote.github.io/post/mei-ri-xuan-ran-002/</id>
+        <link href="https://intaonote.github.io/post/mei-ri-xuan-ran-002/">
+        </link>
+        <updated>2020-03-16T12:42:58.000Z</updated>
+        <content type="html"><![CDATA[<p>当时想做一个某个东西或者事物很独树一帜，又想到一句诗<br>
+“出淤泥而不染，濯清涟而不妖”<br>
+便有了这张图</p>
+<p><img src="https://intaonote.github.io//post-images/1584362663230.png" alt="" loading="lazy"><br>
+这一张加了景深但感觉不是很好<br>
+<img src="https://intaonote.github.io//post-images/1584362740379.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日渲染001]]></title>
+        <id>https://intaonote.github.io/post/2019915-xuan-ran-lian-xi/</id>
+        <link href="https://intaonote.github.io/post/2019915-xuan-ran-lian-xi/">
+        </link>
+        <updated>2020-03-16T12:12:00.000Z</updated>
+        <content type="html"><![CDATA[<p>第一次尝试概念渲染🤞</p>
+<figure data-type="image" tabindex="1"><img src="https://intaonote.github.io//post-images/1584361268429.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
