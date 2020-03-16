@@ -1,333 +1,156 @@
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>MotionNote</title>
-<link rel="shortcut icon" href="https://intaonote.github.io//favicon.ico?v=1584367487406">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://intaonote.github.io//styles/main.css" type='text/css' media='all'>
-
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://intaonote.github.io//favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://intaonote.github.io//media/css/tailwind.css">
+<link rel="stylesheet" href="https://intaonote.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="MotionNote - Atom Feed" href="https://intaonote.github.io//atom.xml">
 
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160597263-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-160597263-1');
+  </script>
+    
 
+  <meta name="description" content="Try you best" />
 </head>
-    <body class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
-        <div id="overflow-container" class="overflow-container">
-            <a class="skip-content" href="#main">Skip to content</a>
-                <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://intaonote.github.io/tag/nD6uhowCA/">渲染</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://intaonote.github.io/tag/-VRgDKQpa/">Gridea</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                        <li>
-                            <a href="https://www.zhihu.com/people/xiao-ying-8-79" data-animate-hover="pulse" class="zhihu" target="_blank">
-                                <i class="fab fa-zhihu" title="zhihu"></i>
-                                <span class="screen-reader-text">zhihu</span>
-                            </a>
-                        </li>
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://intaonote.github.io/">  MotionNote </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">简约而不简单</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">目录</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-
-
-                
-
-<div class="main">
-    <div class="main-content">
-        <div id="timeline-container">
-            <div id="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-    <!--                    <img src="assets/images/star.svg" alt="2020">-->
-                        <span>2020</span>
-                    </div>
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染010</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-010/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染009</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-009/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染008</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-007/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染006</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-006/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染005</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-005/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染004</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-004/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染003</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-003/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染002</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-002/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 每日渲染001</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://intaonote.github.io/post/2019915-xuan-ran-lian-xi/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                    
-                </div>
-                 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-    <!--                    <img src="assets/images/star.svg" alt="2018">-->
-                        <span>2018</span>
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> Hello Gridea</h3>
-                            <p>
-                                <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-                            </p>
-                            <a href="https://intaonote.github.io/post/hello-gridea/" class="btn">review</a>
-                        </div>
-                    
-                    
-                </div>
-                 
-            </div>
-        </div>
-    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        目录
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://intaonote.github.io//atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-                <nav class="navigation pagination" role="navigation">
-    <h2 class="screen-reader-text">Posts navigation</h2>
-    <div class="nav-links">
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-010/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染010
+              </a>
+            </div>
+          </div>
         
-    </div>
-</nav>
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-009/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染009
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-007/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染008
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-006/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染006
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-005/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染005
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-004/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染004
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-003/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染003
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/mei-ri-xuan-ran-002/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染002
+              </a>
+            </div>
+          </div>
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://intaonote.github.io/post/2019915-xuan-ran-lian-xi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                每日渲染001
+              </a>
+            </div>
+          </div>
+        
+      </div>
 
-                <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://intaonote.github.io/"> MotionNote </a>
-    </h1>
-    <p class="site-description">简约而不简单</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
-        </div>
-    </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-                <li>
-                    <a href="https://www.zhihu.com/people/xiao-ying-8-79" data-animate-hover="pulse" class="zhihu" target="_blank">
-                        <i class="fab fa-zhihu" title="zhihu"></i>
-                        <span class="screen-reader-text">zhihu</span>
-                    </a>
-                </li>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p>简约而不简单</p>
-    </div>
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  @2019-2020 This is my rendering diary
 </footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://intaonote.github.io//media/scripts/lib/jquery.min.js"></script>
-<script src="https://intaonote.github.io//media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://intaonote.github.io//media/scripts/lib/production.min.js"></script>
-
-        </div>
-    </body>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://intaonote.github.io//media/scripts/main.js"></script>
+</body>
 </html>
